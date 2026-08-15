@@ -9,7 +9,18 @@ canvas {
   left: 0;
 }
 body {
-  background: #ffffff;
+  background-image:
+    linear-gradient(
+      rgba(255, 240, 248, 0.45),
+      rgba(255, 240, 248, 0.45)
+    ),
+    url("../images/jyothi.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   overflow: hidden;
 }
 .container {
