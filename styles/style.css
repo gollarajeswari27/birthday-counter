@@ -23,16 +23,22 @@ canvas {
 body {
   min-height: 100vh;
 
+  background-color: #f8dfe8;
+
   background-image:
     linear-gradient(
-      rgba(255, 240, 248, 0.25),
-      rgba(255, 240, 248, 0.25)
+      rgba(255, 240, 248, 0.15),
+      rgba(255, 240, 248, 0.15)
     ),
     url("../images/jyothi.png");
 
-  background-size: cover;
+  /* Show the complete image */
+  background-size: contain;
+
   background-position: center center;
+
   background-repeat: no-repeat;
+
   background-attachment: fixed;
 
   overflow: hidden;
