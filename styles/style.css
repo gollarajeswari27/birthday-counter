@@ -44,15 +44,18 @@ body {
 
 
 /* =========================================
-   COUNTDOWN
+   COUNTDOWN - BOTTOM
    ========================================= */
 
 .container {
-  position: relative;
+  position: absolute;
 
   z-index: 5;
 
   width: 100%;
+
+  left: 0;
+  bottom: 25px;
 
   color: rgba(55, 59, 65, 0.9);
 
@@ -62,7 +65,7 @@ body {
 
   text-align: center;
 
-  padding-top: 80px;
+  padding-top: 0;
 
   text-shadow:
     0 1px 3px rgba(255, 255, 255, 0.8);
@@ -73,7 +76,7 @@ h1 {
 
   font-size: 42px;
 
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 li {
@@ -83,7 +86,7 @@ li {
 
   list-style-type: none;
 
-  padding: 1em;
+  padding: 0 1em;
 
   text-transform: uppercase;
 }
@@ -95,7 +98,6 @@ li span {
 
   font-weight: 500;
 }
-
 
 /* =========================================
    GIFT BOX
