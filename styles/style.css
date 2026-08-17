@@ -22,18 +22,19 @@ canvas {
 
 body {
   min-height: 100vh;
+  margin: 0;
 
   background-image:
     linear-gradient(
-      rgba(255, 240, 248, 0.25),
-      rgba(255, 240, 248, 0.25)
+      rgba(255, 240, 248, 0.20),
+      rgba(255, 240, 248, 0.20)
     ),
-    url("../images/jyothi.png");
+    url("../images/triveni.jpeg");
 
   background-size: cover;
 
-  /* Move the image DOWN */
-  background-position: center 75%;
+  /* Image positioned toward the bottom */
+  background-position: center bottom;
 
   background-repeat: no-repeat;
   background-attachment: fixed;
