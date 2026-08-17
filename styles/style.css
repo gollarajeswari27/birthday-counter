@@ -22,7 +22,7 @@ canvas {
 body {
   min-height: 100vh;
   margin: 0;
-  overflow: auto; /* Allows scrolling and zooming */
+  overflow: auto;
 
   background-image:
     linear-gradient(
@@ -31,14 +31,15 @@ body {
     ),
     url("../images/triveni.jpeg");
 
-  /* Covers the entire screen */
-  background-size: cover;
+  /* Fits the entire height without cropping top/face */
+  background-size: contain;
 
-  /* Centers the image */
-  background-position: center center;
+  /* Centers the image horizontally and vertically */
+  background-position: center top;
 
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: #fff0f8; /* Fills empty space on sides if image aspect ratio is narrow */
 }
 
 /* =========================================
@@ -308,9 +309,10 @@ li span {
     ),
     url("../images/triveni.jpeg");
 
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: center top;
   background-repeat: no-repeat;
+  background-color: #fff0f8;
   z-index: 9999;
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -380,6 +382,8 @@ li span {
 @media (max-width: 600px) {
   body {
     background-attachment: scroll;
+    background-size: contain;
+    background-position: center top;
   }
 
   .container {
