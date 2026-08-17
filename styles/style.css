@@ -22,7 +22,7 @@ canvas {
 body {
   min-height: 100vh;
   margin: 0;
-  overflow: hidden;
+  overflow: auto; /* Allows scrolling and zooming */
 
   background-image:
     linear-gradient(
@@ -31,10 +31,10 @@ body {
     ),
     url("../images/triveni.jpeg");
 
-  /* IMPORTANT */
-  background-size: auto 100vh;
+  /* Covers the entire screen */
+  background-size: cover;
 
-  /* Show the complete image */
+  /* Centers the image */
   background-position: center center;
 
   background-repeat: no-repeat;
